@@ -93,7 +93,7 @@ export default function BuildForYouSection() {
         t('audience4.useCase2'),
         t('audience4.useCase3'),
       ],
-      priority: 4,
+      priority: 5,
     },
     {
       id: 5,
@@ -101,7 +101,7 @@ export default function BuildForYouSection() {
       title: t('audience5.title'),
       description: t('audience5.description'),
       useCases: [t('audience5.useCase1'), t('audience5.useCase2')],
-      priority: 4,
+      priority: 3,
     },
     {
       id: 6,

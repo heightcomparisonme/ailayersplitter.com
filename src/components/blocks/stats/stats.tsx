@@ -18,7 +18,7 @@ export default function StatsSection() {
 
         <div className="grid gap-12 divide-y-0 *:text-center md:grid-cols-3 md:gap-2 md:divide-x">
           <div className="space-y-4">
-            <div className="text-5xl font-bold text-primary">+1200</div>
+            <div className="text-5xl font-bold text-primary">+5020</div>
             <p>{t('items.item-1.title')}</p>
           </div>
           <div className="space-y-4">
