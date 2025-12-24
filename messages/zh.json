@@ -847,6 +847,65 @@
       },
       "bottomText": "体验 Qwen Image Layered 的革命性力量。上传您的图像，见证 AI 自动创造的奇迹。"
     },
+    "buildForYou": {
+      "title": "为您的创意工作流程打造",
+      "description": "Qwen Image Layered 的 AI 图层分解功能服务于各类创意专业人士。了解我们的工具如何改变各个行业的工作流程。",
+      "coreAudience": "核心用户群体",
+      "extendedAudience": "扩展应用场景",
+      "audience1": {
+        "title": "设计师与设计工作室",
+        "description": "快速将客户设计、海报和广告分解为可编辑图层，用于品牌重塑和修改。",
+        "useCase1": "一键从合成图中提取图层",
+        "useCase2": "节省数小时的手工 Photoshop 遮罩工作",
+        "useCase3": "导出分层 PSD 文件实现无缝编辑"
+      },
+      "audience2": {
+        "title": "电商卖家与产品摄影师",
+        "description": "轻松分离产品与背景，调整角度，并将物品放置在不同场景中。",
+        "useCase1": "为产品目录替换背景",
+        "useCase2": "批量处理多张产品图片",
+        "useCase3": "降低照片编辑外包成本"
+      },
+      "audience3": {
+        "title": "UI 与游戏设计师",
+        "description": "从艺术作品和 UI 参考图中提取图层，进行精确修改、色彩调整和元素隔离。",
+        "useCase1": "识别并分离 UI 元素、纹理和阴影",
+        "useCase2": "为游戏资产生成高精度图层蒙版",
+        "useCase3": "加速游戏 UI 和场景制作"
+      },
+      "audience4": {
+        "title": "视频与动画创作者",
+        "description": "从关键帧中提取元素，用于运动追踪、绿幕替换和动画工作流程。",
+        "useCase1": "VFX 关键帧自动分解",
+        "useCase2": "从静态图像准备运动追踪素材",
+        "useCase3": "减少手工逐帧分离工作量"
+      },
+      "audience5": {
+        "title": "AR/VR 内容创作者",
+        "description": "从 2D 图像中提取主体和背景，用于深度估计和 3D 环境构建。",
+        "useCase1": "主体背景分离用于深度映射",
+        "useCase2": "简化虚拟环境搭建流程"
+      },
+      "audience6": {
+        "title": "文档与教育内容编辑",
+        "description": "分离教科书和学习材料中的文本、图表和背景，用于重新排版和多语言适配。",
+        "useCase1": "自动识别文本和内容图层",
+        "useCase2": "数字化和重新格式化旧教材"
+      },
+      "audience7": {
+        "title": "内容创作者与社交媒体",
+        "description": "快速改编现有视觉素材，为缩略图、封面和宣传内容创建多个变体。",
+        "useCase1": "从一个来源生成多个设计变体",
+        "useCase2": "节省素材库和设计外包成本"
+      },
+      "audience8": {
+        "title": "建筑与室内设计师",
+        "description": "从参考照片和效果图中提取不同区域，进行虚拟修改和方案对比。",
+        "useCase1": "分离墙面、家具和装饰元素",
+        "useCase2": "快速设计迭代和可视化"
+      },
+      "bottomText": "从专业设计师到内容创作者，Qwen Image Layered 赋能每个人通过 AI 自动化实现专业级成果。"
+    },
     "integration": {
       "title": "集成",
       "subtitle": "与您最喜欢的工具集成",
@@ -980,80 +1039,80 @@
       }
     },
     "testimonials": {
-      "title": "客户评价",
-      "subtitle": "我们的客户对我们的评价",
+      "title": "Ai Layer Splitter Tool 用户评价",
+      "subtitle": "真实的 Image Layered 分层效果，帮团队节省大量时间",
       "items": {
         "item-1": {
-          "name": "Jonathan Yombo",
-          "role": "软件工程师",
+          "name": "Mina Zhao",
+          "role": "电商卖家",
           "image": "https://randomuser.me/api/portraits/men/1.jpg",
-          "quote": "MkSaaS 非常出色且实用，无需费心，一个真正的金矿。"
+          "quote": "我们每天都要换商品背景和场景。Ai Layer Splitter Tool 一键输出 Image Layered 分层文件，半小时就能做出一批新主图。"
         },
         "item-2": {
-          "name": "Yves Kalume",
-          "role": "Android GDE",
+          "name": "Alex Romero",
+          "role": "平面设计师 / 工作室负责人",
           "image": "https://randomuser.me/api/portraits/men/6.jpg",
-          "quote": "没有网页设计经验，我只需几分钟就可以用 Tailwindcss 重新设计我的整个网站，感谢 MkSaaS。"
+          "quote": "客户只给合成海报，我以前要手工抠图。Ai Layer Splitter Tool 直接拆成可编辑层，改版效率翻倍。"
         },
         "item-3": {
-          "name": "Yucel Faruksahan",
-          "role": "Tailkits 创建者",
+          "name": "Jiho Park",
+          "role": "UI / 游戏美术",
           "image": "https://randomuser.me/api/portraits/men/7.jpg",
-          "quote": "MkSaaS 模板做得很好，这是我见过最好的 SaaS 模板，没有之一 :)"
+          "quote": "游戏 UI 需要精细的材质和阴影层。Image Layered 分层结果很干净，调整色块不用重画。"
         },
         "item-4": {
-          "name": "Anonymous author",
-          "role": "产品经理",
+          "name": "Priya Singh",
+          "role": "产品摄影师",
           "image": "https://randomuser.me/api/portraits/men/8.jpg",
-          "quote": "我不熟悉 Tailwind，我想自己做一些页面，我在网上搜索了很多英雄页面和区块。然而，大多数都没有给我一个清晰的想法，或者需要一些 HTML/CSS 编码背景来从原始文件中做一些更改，或者太贵了。我下载了其中一个 MkSaaS 模板，它非常容易理解，你可以在开始时修改代码/区块以完美地适应你的页面目的。"
+          "quote": "拍完产品要批量换底色和场景。Ai Layer Splitter Tool 自动分离商品与背景，出片快很多。"
         },
         "item-5": {
-          "name": "Shekinah Tshiokufila",
-          "role": "高级软件工程师",
+          "name": "Diego Alves",
+          "role": "视频 / 动效设计师",
           "image": "https://randomuser.me/api/portraits/men/4.jpg",
-          "quote": "MkSaaS 正在重新定义网页设计标准，这些区块为那些喜欢美丽但可能缺乏时间实现它的人提供了简单且高效的方式。我只能推荐这个不可思议的奇迹。"
+          "quote": "做动效时我常要从静帧提元素。这个工具能从关键帧拆层，省掉大量逐帧抠像。"
         },
         "item-6": {
-          "name": "Oketa Fred",
-          "role": "全栈开发工程师",
+          "name": "Elena Kovac",
+          "role": "AR / VR 内容创作者",
           "image": "https://randomuser.me/api/portraits/men/2.jpg",
-          "quote": "我绝对喜欢 MkSaaS！这些组件区块设计精美且易于使用，使创建一个出色的网站变得轻而易举。"
+          "quote": "我们把 2D 素材转成 3D 可用元素。Image Layered 拆分让深度估计更准，场景搭建更快。"
         },
         "item-7": {
-          "name": "Zeki",
-          "role": "ChatExtend 创始人",
+          "name": "Hannah Lee",
+          "role": "教材编辑",
           "image": "https://randomuser.me/api/portraits/men/5.jpg",
-          "quote": "使用 MkSaaS 就像解锁了一个秘密的设计超能力。它是简单性和多功能性的完美融合，使我们能够创建既令人惊叹又用户友好的界面。"
+          "quote": "教材里图文混排很麻烦。Ai Layer Splitter Tool 自动分出文字、图表和底图，排版和多语版本更省事。"
         },
         "item-8": {
-          "name": "Joseph Kitheka",
-          "role": "全栈开发工程师",
+          "name": "Leo Chen",
+          "role": "内容创作者",
           "image": "https://randomuser.me/api/portraits/men/9.jpg",
-          "quote": "MkSaaS 改变了我的网页开发方式。他们的 UI 组件、区块和模板极大地加速了我的工作流程。定制每个方面的灵活性使我能够创建独特的用户体验。MkSaaS 是现代网页开发的游戏规则改变者！"
+          "quote": "封面和缩略图要不断做变体。Image Layered 分层后，换人物、文字和效果只需几分钟。"
         },
         "item-9": {
-          "name": "Khatab Wedaa",
-          "role": "MerakiUI 创建者",
+          "name": "Emma Rossi",
+          "role": "室内设计师",
           "image": "https://randomuser.me/api/portraits/men/10.jpg",
-          "quote": "MkSaaS 是一个优雅、干净且响应式的 SaaS 模板，它非常有助于快速开始您的项目。"
+          "quote": "我会从参考图里提取家具和墙面材质。分层后做方案对比更快，也更容易和客户沟通。"
         },
         "item-10": {
-          "name": "Rodrigo Aguilar",
-          "role": "TailwindAwesome 创建者",
+          "name": "Nora Patel",
+          "role": "广告美术总监",
           "image": "https://randomuser.me/api/portraits/men/11.jpg",
-          "quote": "我爱 MkSaaS ❤️。这些组件区块结构良好，易于使用，设计精美。它使创建一个出色的网站变得非常容易。"
+          "quote": "广告创意常是合成大图。Ai Layer Splitter Tool 拆成独立层，方便做本地化和 A/B 测试。"
         },
         "item-11": {
-          "name": "Eric Ampire",
-          "role": "Google 开发者专家",
+          "name": "Kai Nguyen",
+          "role": "游戏 UI 主管",
           "image": "https://randomuser.me/api/portraits/men/12.jpg",
-          "quote": "MkSaaS 模板是任何想要创建一个美丽且功能齐全的网站但没有网页设计经验的人的完美解决方案。这些模板易于使用，可定制，并且响应迅速。我强烈推荐 MkSaaS 模板给任何想要创建网站的人。"
+          "quote": "外包概念稿量大又杂，重建成本高。Image Layered 拆层帮我快速拿到图标、边框、特效层。"
         },
         "item-12": {
-          "name": "Roland Tubonge",
-          "role": "软件工程师",
+          "name": "Sara Ibrahim",
+          "role": "品牌设计师",
           "image": "https://randomuser.me/api/portraits/men/13.jpg",
-          "quote": "MkSaaS 设计得如此出色，即使没有网页设计经验，您也可以创造奇迹。让自己被吸引！"
+          "quote": "包装设计改稿节奏很快。这个工具的分层精度高，换色、改字不用从头来。"
         }
       }
     },

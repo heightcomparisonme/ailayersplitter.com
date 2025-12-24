@@ -847,6 +847,65 @@
       },
       "bottomText": "Experience the revolutionary power of Qwen Image Layered. Upload your image and see the magic happen automatically."
     },
+    "buildForYou": {
+      "title": "Built For Your Creative Workflow",
+      "description": "Qwen Image Layered's AI layer decomposition serves diverse creative professionals. Discover how our tool transforms workflows across industries.",
+      "coreAudience": "Core Audience",
+      "extendedAudience": "Extended Use Cases",
+      "audience1": {
+        "title": "Designers & Design Studios",
+        "description": "Quickly decompose client designs, posters, and advertisements into editable layers for rebranding and modifications.",
+        "useCase1": "One-click layer extraction from composite images",
+        "useCase2": "Save hours of manual Photoshop masking work",
+        "useCase3": "Export layered PSD files for seamless editing"
+      },
+      "audience2": {
+        "title": "E-commerce Sellers & Product Photographers",
+        "description": "Separate products from backgrounds, adjust angles, and place items in different scenes effortlessly.",
+        "useCase1": "Replace backgrounds for product catalogs",
+        "useCase2": "Batch process multiple product images",
+        "useCase3": "Reduce outsourcing costs for photo editing"
+      },
+      "audience3": {
+        "title": "UI & Game Designers",
+        "description": "Extract layers from artwork and UI references for precise modifications, color adjustments, and element isolation.",
+        "useCase1": "Identify and separate UI elements, textures, and shadows",
+        "useCase2": "High-precision layer masks for game assets",
+        "useCase3": "Accelerate game UI and scene production"
+      },
+      "audience4": {
+        "title": "Video & Animation Creators",
+        "description": "Extract elements from keyframes for motion tracking, green screen replacement, and animation workflows.",
+        "useCase1": "Automatic keyframe decomposition for VFX",
+        "useCase2": "Motion tracking preparation from static images",
+        "useCase3": "Reduce manual frame-by-frame separation work"
+      },
+      "audience5": {
+        "title": "AR/VR Content Creators",
+        "description": "Extract subjects and backgrounds from 2D images for depth estimation and 3D environment construction.",
+        "useCase1": "Subject-background separation for depth mapping",
+        "useCase2": "Streamline virtual environment setup"
+      },
+      "audience6": {
+        "title": "Document & Educational Content Editors",
+        "description": "Separate text, charts, and backgrounds in textbooks and learning materials for reformatting and multilingual adaptation.",
+        "useCase1": "Automatic text and content layer recognition",
+        "useCase2": "Digitize and reformat legacy educational materials"
+      },
+      "audience7": {
+        "title": "Content Creators & Social Media",
+        "description": "Quickly adapt existing visuals to create multiple variations for thumbnails, covers, and promotional content.",
+        "useCase1": "Generate multiple design variants from one source",
+        "useCase2": "Save on stock asset and design outsourcing costs"
+      },
+      "audience8": {
+        "title": "Architectural & Interior Designers",
+        "description": "Extract different regions from reference photos and renders for virtual modifications and design comparisons.",
+        "useCase1": "Separate walls, furniture, and decorative elements",
+        "useCase2": "Rapid design iteration and visualization"
+      },
+      "bottomText": "From professional designers to content creators, Qwen Image Layered empowers everyone to achieve professional-grade results with AI-powered automation."
+    },
     "integration": {
       "title": "Integrations",
       "subtitle": "Integrate with your favorite tools",
@@ -980,80 +1039,80 @@
       }
     },
     "testimonials": {
-      "title": "Qwen Image Layered Reviews",
-      "subtitle": "What users say about Qwen Image Layered",
+      "title": "Ai Layer Splitter Tool Testimonials",
+      "subtitle": "Image Layered results trusted by teams who need fast, editable layers",
       "items": {
         "item-1": {
-          "name": "Jonathan Yombo",
-          "role": "Software Engineer",
+          "name": "Mina Zhao",
+          "role": "E-commerce Seller",
           "image": "https://randomuser.me/api/portraits/men/1.jpg",
-          "quote": "MkSaaS is really extraordinary and very practical, no need to break your head. A real gold mine."
+          "quote": "We replace product backgrounds all day. Ai Layer Splitter Tool delivers an Image Layered PSD in seconds, so I can ship 20 variations before lunch."
         },
         "item-2": {
-          "name": "Yves Kalume",
-          "role": "GDE - Android",
+          "name": "Alex Romero",
+          "role": "Graphic Designer, Studio Lead",
           "image": "https://randomuser.me/api/portraits/men/6.jpg",
-          "quote": "With no experience in webdesign I just redesigned my entire website in a few minutes with tailwindcss thanks to MkSaaS."
+          "quote": "Clients send flattened posters. Ai Layer Splitter Tool splits every element into an Image Layered file, cutting hours of manual masking."
         },
         "item-3": {
-          "name": "Yucel Faruksahan",
-          "role": "Tailkits Creator",
+          "name": "Jiho Park",
+          "role": "UI and Game Artist",
           "image": "https://randomuser.me/api/portraits/men/7.jpg",
-          "quote": "Great work on MkSaaS template. This is one of the best personal website that I have seen so far :)"
+          "quote": "For game UI, I need clean masks for materials and shadows. The Image Layered output keeps every layer editable, so I iterate faster."
         },
         "item-4": {
-          "name": "Anonymous author",
-          "role": "Product Manager",
+          "name": "Priya Singh",
+          "role": "Product Photographer",
           "image": "https://randomuser.me/api/portraits/men/8.jpg",
-          "quote": "I downloaded the one of MkSaaS template which is very clear to understand at the start and you could modify the codes/blocks to fit perfectly on your purpose of the page."
+          "quote": "I shoot catalogs and need fast background swaps. Ai Layer Splitter Tool separates products from scenes accurately, which makes batch edits painless."
         },
         "item-5": {
-          "name": "Shekinah Tshiokufila",
-          "role": "Senior Software Engineer",
+          "name": "Diego Alves",
+          "role": "Motion Designer",
           "image": "https://randomuser.me/api/portraits/men/4.jpg",
-          "quote": "MkSaaS is redefining the standard of web design, with these blocks it provides an easy and efficient way for those who love beauty but may lack the time to implement it."
+          "quote": "Pulling elements from stills for motion comps used to be frame-by-frame. This tool extracts layers from key frames and saves me days of rotoscoping."
         },
         "item-6": {
-          "name": "Oketa Fred",
-          "role": "Fullstack Developer",
+          "name": "Elena Kovac",
+          "role": "AR and VR Creator",
           "image": "https://randomuser.me/api/portraits/men/2.jpg",
-          "quote": "I absolutely love MkSaaS! The component blocks are beautifully designed and easy to use, which makes creating a great-looking website a breeze."
+          "quote": "We turn 2D images into 3D-ready assets. Image Layered separation gives cleaner depth cues and faster scene assembly."
         },
         "item-7": {
-          "name": "Zeki",
-          "role": "Founder of ChatExtend",
+          "name": "Hannah Lee",
+          "role": "Textbook Editor",
           "image": "https://randomuser.me/api/portraits/men/5.jpg",
-          "quote": "MkSaaS is the perfect fusion of simplicity and versatility, enabling us to create UIs that are as stunning as they are user-friendly."
+          "quote": "Text, charts, and backgrounds finally come apart cleanly. Ai Layer Splitter Tool makes re-layout and localization much faster."
         },
         "item-8": {
-          "name": "Joseph Kitheka",
-          "role": "Fullstack Developer",
+          "name": "Leo Chen",
+          "role": "YouTube Creator",
           "image": "https://randomuser.me/api/portraits/men/9.jpg",
-          "quote": "MkSaaS has transformed the way I develop web applications. Their extensive collection of UI components, blocks, and templates has significantly accelerated my workflow."
+          "quote": "Thumbnails are my daily grind. With Image Layered exports, I remix subjects, text, and effects into multiple variants in minutes."
         },
         "item-9": {
-          "name": "Khatab Wedaa",
-          "role": "MerakiUI Creator",
+          "name": "Emma Rossi",
+          "role": "Interior Designer",
           "image": "https://randomuser.me/api/portraits/men/10.jpg",
-          "quote": "MkSaaS is an elegant, clean, and responsive tailwind css components it's very helpful to start fast with your project."
+          "quote": "I lift furniture and wall textures from reference shots, then test options for clients. The layered output speeds up every mockup."
         },
         "item-10": {
-          "name": "Rodrigo Aguilar",
-          "role": "TailwindAwesome Creator",
+          "name": "Nora Patel",
+          "role": "Advertising Art Director",
           "image": "https://randomuser.me/api/portraits/men/11.jpg",
-          "quote": "I love MkSaaS ❤️. The component blocks are well-structured, simple to use, and beautifully designed. It makes it really easy to have a good-looking website in no time."
+          "quote": "Campaigns often arrive as flattened composites. Ai Layer Splitter Tool breaks them into editable layers so we can localize and A/B test faster."
         },
         "item-11": {
-          "name": "Eric Ampire",
-          "role": "@GoogleDevExpert for Android",
+          "name": "Kai Nguyen",
+          "role": "Game UI Lead",
           "image": "https://randomuser.me/api/portraits/men/12.jpg",
-          "quote": "MkSaaS templates are the perfect solution for anyone who wants to create a beautiful and functional website without any web design experience."
+          "quote": "We get huge concept boards from outsource teams. Image Layered splits help me isolate icons, frames, and effects without rebuilding."
         },
         "item-12": {
-          "name": "Roland Tubonge",
-          "role": "Software Engineer",
+          "name": "Sara Ibrahim",
+          "role": "Brand Designer",
           "image": "https://randomuser.me/api/portraits/men/13.jpg",
-          "quote": "MkSaaS is so well designed that even with a very poor knowledge of web design you can do miracles. Let yourself be seduced!"
+          "quote": "Packaging revisions come fast. The tool gives clean layer separation, so color swaps and label changes are painless."
         }
       }
     },

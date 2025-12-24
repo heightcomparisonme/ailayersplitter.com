@@ -12,6 +12,7 @@ import StatsSection from '@/components/blocks/stats/stats';
 import TestimonialsSection from '@/components/blocks/testimonials/testimonials';
 import IntroductionSection from '@/components/blocks/introduction/introduction';
 import ShowcaseSection from '@/components/blocks/showcase/showcase';
+import BuildForYouSection from '@/components/blocks/bulid-for-you/bulid-for-you';
 import CrispChat from '@/components/layout/crisp-chat';
 import { NewsletterCard } from '@/components/newsletter/newsletter-card';
 import { constructMetadata } from '@/lib/metadata';
@@ -54,6 +55,8 @@ export default async function HomePage(props: HomePageProps) {
 
         <IntroductionSection />
 
+        <BuildForYouSection />
+
         <ShowcaseSection />
 
         {/* <LogoCloud /> */}
@@ -77,7 +80,7 @@ export default async function HomePage(props: HomePageProps) {
         <CallToActionSection />
 
         <TestimonialsSection />
-        
+
         <StatsSection />
 
         <NewsletterCard />
