@@ -4,8 +4,8 @@ import FeaturesSection from '@/components/blocks/features/features';
 import Features2Section from '@/components/blocks/features/features2';
 import Features3Section from '@/components/blocks/features/features3';
 import HeroSection from '@/components/blocks/hero/hero';
-import IntegrationSection from '@/components/blocks/integration/integration';
-import Integration2Section from '@/components/blocks/integration/integration2';
+// import IntegrationSection from '@/components/blocks/integration/integration';
+// import Integration2Section from '@/components/blocks/integration/integration2';
 // import LogoCloud from '@/components/blocks/logo-cloud/logo-cloud';
 // import PricingSection from '@/components/blocks/pricing/pricing';
 import StatsSection from '@/components/blocks/stats/stats';
@@ -57,7 +57,7 @@ export default async function HomePage(props: HomePageProps) {
 
         <StatsSection />
 
-        <IntegrationSection />
+        {/* <IntegrationSection /> */}
 
         <FeaturesSection />
 
@@ -65,7 +65,7 @@ export default async function HomePage(props: HomePageProps) {
 
         <Features3Section />
 
-        <Integration2Section />
+        {/* <Integration2Section /> */}
 
         {/* <PricingSection /> */}
 

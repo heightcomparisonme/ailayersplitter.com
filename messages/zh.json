@@ -869,25 +869,25 @@
       "secondaryButton": "查看演示"
     },
     "features": {
-      "title": "功能",
-      "subtitle": "您的 SaaS 产品功能",
-      "description": "请在这里介绍您的 SaaS 产品的特色功能的信息",
+      "title": "Qwen Image Layered 核心特性",
+      "subtitle": "革命性 AI 图像图层分解技术",
+      "description": "了解 Qwen Image Layered 如何通过 AI 自动化转变您的图像编辑工作流程。Qwen Image Layered 自动将任何图像分解为可编辑的 RGBA 图层。",
       "items": {
         "item-1": {
-          "title": "产品特色功能一",
-          "description": "请在这里详细描述您的产品特色功能一，尽可能详细，使其更吸引用户，提高落地页的转化率"
+          "title": "自动图层分解",
+          "description": "Qwen Image Layered AI 自动将您的图像分离为多个带有透明度的可编辑图层。无需手动选择或遮罩 - Qwen Image Layered AI 瞬间为您完成所有工作。"
         },
         "item-2": {
-          "title": "产品特色功能二",
-          "description": "请在这里详细描述您的产品特色功能二，尽可能详细，使其更吸引用户，提高落地页的转化率"
+          "title": "智能背景重建",
+          "description": "Qwen Image Layered 智能地填充对象后面的隐藏区域，创建准备好进行编辑的完整图层。非常适合使用 Qwen Image Layered 进行对象移除和替换。"
         },
         "item-3": {
-          "title": "产品特色功能三",
-          "description": "请在这里详细描述您的产品特色功能三，尽可能详细，使其更吸引用户，提高落地页的转化率"
+          "title": "灵活的图层控制",
+          "description": "Qwen Image Layered 根据图像复杂度支持 3-8+ 个图层。使用 Qwen Image Layered 递归分解图层，实现无限精细和精准的编辑。"
         },
         "item-4": {
-          "title": "产品特色功能四",
-          "description": "请在这里详细描述您的产品特色功能四，尽可能详细，使其更吸引用户，提高落地页的转化率"
+          "title": "简单编辑操作",
+          "description": "使用 Qwen Image Layered，可以独立调整大小、重新着色、移动或替换对象而不影响其他图层。Qwen Image Layered 让高保真编辑变得简单。"
         }
       }
     },

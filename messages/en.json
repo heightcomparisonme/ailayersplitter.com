@@ -870,12 +870,12 @@
     },
     "features": {
       "title": "Qwen Image Layered Features",
-      "subtitle": "Ai Layer Splitter ",
-      "description": "Discover how Qwen Image Layered transforms your image editing workflow with AI-powered automation",
+      "subtitle": "Revolutionary AI Image Layer Decomposition",
+      "description": "Discover how Qwen Image Layered transforms your image editing workflow with AI-powered automation. Qwen Image Layered automatically decomposes any image into editable RGBA layers.",
       "items": {
         "item-1": {
           "title": "Automatic Layer Decomposition",
-          "description": "Qwen Image Layered AI automatically separates your image into multiple editable layers with transparency. No manual selection or masking needed with Qwen Image Layered."
+          "description": "Qwen Image Layered AI automatically separates your image into multiple editable layers with transparency. No manual selection or masking needed with Qwen Image Layered - AI does the work for you instantly."
         },
         "item-2": {
           "title": "Smart Background Reconstruction",
@@ -883,7 +883,7 @@
         },
         "item-3": {
           "title": "Flexible Layer Control",
-          "description": "Qwen Image Layered supports 3-8+ layers based on image complexity. Decompose layers recursively with Qwen Image Layered for infinite refinement and precision."
+          "description": "Qwen Image Layered supports 3-8+ layers based on image complexity. Decompose layers recursively with Qwen Image Layered for infinite refinement and precision in your edits."
         },
         "item-4": {
           "title": "Easy Editing Operations",
