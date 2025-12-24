@@ -5,7 +5,7 @@ import { TextEffect } from '@/components/tailark/motion/text-effect';
 import { X, ZoomIn } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
-import { useState } from 'react';
+import { memo, useCallback, useMemo, useState } from 'react';
 
 const transitionVariants = {
   item: {
@@ -35,34 +35,102 @@ interface ShowcaseItem {
   darkImage: string;
 }
 
+type ShowcaseGridProps = {
+  items: ShowcaseItem[];
+  onSelect: (item: ShowcaseItem) => void;
+};
+
+const ShowcaseGrid = memo(function ShowcaseGrid({
+  items,
+  onSelect,
+}: ShowcaseGridProps) {
+  return (
+    <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      {items.map((item) => (
+        <div
+          key={item.id}
+          className="group relative overflow-hidden rounded-2xl border bg-background/50 backdrop-blur-sm transition-all duration-300 hover:shadow-xl hover:scale-[1.02] cursor-pointer"
+          onClick={() => onSelect(item)}
+        >
+          <div className="relative aspect-[2650/1440] w-full overflow-hidden rounded-2xl bg-muted">
+            <Image
+              src={item.image}
+              alt={item.title}
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-110 dark:hidden"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+            <Image
+              src={item.darkImage}
+              alt={item.title}
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-110 hidden dark:block"
+              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            />
+
+            <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+              <div className="rounded-full bg-black/50 p-3 backdrop-blur-sm">
+                <ZoomIn className="h-6 w-6 text-white" />
+              </div>
+            </div>
+
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+          </div>
+
+          <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-2 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+            <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+            <p className="text-sm text-gray-200 leading-relaxed">
+              {item.description}
+            </p>
+          </div>
+
+          <div className="absolute inset-0 rounded-2xl border-2 border-primary/0 transition-colors duration-300 group-hover:border-primary/20" />
+        </div>
+      ))}
+    </div>
+  );
+});
+
+ShowcaseGrid.displayName = 'ShowcaseGrid';
+
 export default function ShowcaseSection() {
   const t = useTranslations('HomePage.showcase');
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [selectedImage, setSelectedImage] = useState<ShowcaseItem | null>(null);
 
-  const showcaseItems: ShowcaseItem[] = [
-    {
-      id: 1,
-      title: t('item1.title'),
-      description: t('item1.description'),
-      image: '/blocks/showcase/showcase-1-light.jpg',
-      darkImage: '/blocks/showcase/showcase-1-dark.jpg',
-    },
-    {
-      id: 2,
-      title: t('item2.title'),
-      description: t('item2.description'),
-      image: '/blocks/showcase/showcase-2-light.jpg',
-      darkImage: '/blocks/showcase/showcase-2-dark.jpg',
-    },
-    {
-      id: 3,
-      title: t('item3.title'),
-      description: t('item3.description'),
-      image: '/blocks/showcase/showcase-3-light.jpg',
-      darkImage: '/blocks/showcase/showcase-3-dark.jpg',
-    },
-  ];
+  const showcaseItems = useMemo<ShowcaseItem[]>(
+    () => [
+      {
+        id: 1,
+        title: t('item1.title'),
+        description: t('item1.description'),
+        image: '/blocks/showcase/showcase-1-light.jpg',
+        darkImage: '/blocks/showcase/showcase-1-dark.jpg',
+      },
+      {
+        id: 2,
+        title: t('item2.title'),
+        description: t('item2.description'),
+        image: '/blocks/showcase/showcase-2-light.jpg',
+        darkImage: '/blocks/showcase/showcase-2-dark.jpg',
+      },
+      {
+        id: 3,
+        title: t('item3.title'),
+        description: t('item3.description'),
+        image: '/blocks/showcase/showcase-3-light.jpg',
+        darkImage: '/blocks/showcase/showcase-3-dark.jpg',
+      },
+    ],
+    [t]
+  );
+
+  const handleSelect = useCallback((item: ShowcaseItem) => {
+    setSelectedImage(item);
+  }, []);
+
+  const handleClose = useCallback(() => {
+    setSelectedImage(null);
+  }, []);
 
   return (
     <section id="showcase" className="bg-background px-4 py-24">
@@ -85,56 +153,7 @@ export default function ShowcaseSection() {
           </div>
 
           {/* Showcase Grid */}
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {showcaseItems.map((item, index) => (
-              <div
-                key={item.id}
-                className="group relative overflow-hidden rounded-2xl border bg-background/50 backdrop-blur-sm transition-all duration-300 hover:shadow-xl hover:scale-[1.02] cursor-pointer"
-                onMouseEnter={() => setHoveredIndex(index)}
-                onMouseLeave={() => setHoveredIndex(null)}
-                onClick={() => setSelectedImage(item)}
-              >
-                {/* Image Container */}
-                <div className="relative aspect-[2650/1440] w-full overflow-hidden rounded-2xl bg-muted">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110 dark:hidden"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-                  <Image
-                    src={item.darkImage}
-                    alt={item.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110 hidden dark:block"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  />
-
-                  {/* Zoom Icon */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    <div className="rounded-full bg-black/50 p-3 backdrop-blur-sm">
-                      <ZoomIn className="h-6 w-6 text-white" />
-                    </div>
-                  </div>
-
-                  {/* Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-                </div>
-
-                {/* Content */}
-                <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-2 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                  <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                  <p className="text-sm text-gray-200 leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-
-                {/* Hover Border Effect */}
-                <div className="absolute inset-0 rounded-2xl border-2 border-primary/0 transition-colors duration-300 group-hover:border-primary/20" />
-              </div>
-            ))}
-          </div>
+          <ShowcaseGrid items={showcaseItems} onSelect={handleSelect} />
 
           {/* Bottom CTA */}
           <div className="mx-auto mt-16 max-w-3xl text-center">
@@ -147,12 +166,12 @@ export default function ShowcaseSection() {
       {selectedImage && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4"
-          onClick={() => setSelectedImage(null)}
+          onClick={handleClose}
         >
           <div className="relative max-w-6xl w-full">
             {/* Close Button */}
             <button
-              onClick={() => setSelectedImage(null)}
+              onClick={handleClose}
               className="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors"
               aria-label="Close"
             >

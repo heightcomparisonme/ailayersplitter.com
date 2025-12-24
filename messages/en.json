@@ -1014,27 +1014,87 @@
     },
     "faqs": {
       "title": "FAQ",
-      "subtitle": "Frequently Asked Questions",
+      "subtitle": "Frequently Asked Questions About Qwen Image Layered",
       "items": {
         "item-1": {
-          "question": "Do you offer a free trial?",
-          "answer": "Yes, we offer a 7-day free trial."
+          "question": "What is Qwen-Image-Layered model?",
+          "answer": "Qwen-Image-Layered is a breakthrough AI model that decomposes a single flat image into multiple RGBA (color + transparency) layers. Unlike traditional segmentation masks, it attempts semantic decomposition with recoverable occlusion - meaning it can identify and separate visual components while preserving edges, alpha boundaries, and detailed interior structure, effectively turning one image into a stack of editable elements like a Photoshop project file."
         },
         "item-2": {
-          "question": "How do I cancel my subscription?",
-          "answer": "You can cancel your subscription by visiting the billing page."
+          "question": "How is Qwen-Image-Layered different from traditional image segmentation?",
+          "answer": "Traditional segmentation masks only identify foreground and background regions but cannot reconstruct edges, alpha boundaries, or detailed interior structure. A mask cannot restore what is hidden behind an object. Qwen-Image-Layered goes beyond by performing semantic decomposition with recoverable occlusion - each output layer contains transparency, meaning overlap and occlusion can be reconstructed, and hidden visual information can potentially be recovered."
         },
         "item-3": {
-          "question": "Can I change my plan?",
-          "answer": "Yes, you can change your plan at any time by visiting the billing page."
+          "question": "What are the practical applications of layered image editing?",
+          "answer": "Layered images enable numerous practical applications: move objects independently within a composition, change backgrounds without losing shadows or lighting consistency, recolor or restyle surface textures, translate packaging text while preserving layout and curvature, animate foreground objects for video content, and export individual assets into commercial design systems. This transforms one-time images into infinitely reusable creative assets."
         },
         "item-4": {
-          "question": "What is the refund policy?",
-          "answer": "We offer a 30-day money-back guarantee if you are not happy with our product."
+          "question": "Is Qwen-Image-Layered model available for commercial use?",
+          "answer": "As of now, Qwen-Image-Layered is in a research and prototyping phase. The research paper is public, developers can test a Hugging Face demo, and model weights are available for local experimentation. However, there is no commercial API for production integration, no SaaS platforms offering it as a turnkey service, and no scaled workflow tuned for daily creative operations. Adoption will progress from research → early developer tooling → commercial channels."
         },
         "item-5": {
-          "question": "Can't find what you're looking for?",
-          "answer": "Please contact our customer support team at support@mksaas.com"
+          "question": "Can I try Qwen-Image-Layered model today?",
+          "answer": "Yes! You can try the official Hugging Face Space demo where you can upload images and receive multiple RGBA layers as output. Advanced developers can also download the model weights for local experimentation. However, these are research/prototype tools, not production-ready commercial solutions."
+        },
+        "item-6": {
+          "question": "How can layered images benefit e-commerce businesses?",
+          "answer": "For e-commerce, layered images dramatically improve efficiency: enable faster A/B creative testing without reshoots, reduce studio production costs by reusing product shots across different backgrounds, provide endless location and environment variations, maintain brand consistency across marketplaces, and allow rapid SKU updates by replacing products in existing lifestyle shots rather than organizing new photoshoots."
+        },
+        "item-7": {
+          "question": "What's the difference between RGB and RGBA image layers?",
+          "answer": "RGB images have three color channels (Red, Green, Blue) and represent flat, opaque images. RGBA adds a fourth Alpha channel that stores transparency information. This alpha channel enables layers to have transparent backgrounds, soft edges, and variable opacity - making it possible to stack multiple visual elements and reconstruct complex scenes with proper overlapping and occlusion effects."
+        },
+        "item-8": {
+          "question": "How does layered editing help with packaging localization?",
+          "answer": "Layered editing isolates text elements while preserving brand geometry, label curvature, lighting, and spatial relationships. When translating packaging to different languages (Spanish, Korean, Japanese, French, Arabic, etc.), you can modify just the text layer without affecting the container design, graphics, or dimensional markings. This dramatically accelerates multi-market product launches."
+        },
+        "item-9": {
+          "question": "Can layered images be used for video and animation?",
+          "answer": "Yes! Layered images are motion-ready by design. Once an image is decomposed into RGBA layers, each layer can be independently animated - objects can move, rotate, scale, or transform while maintaining clean edges and proper layer ordering. This makes layered outputs ideal for video production, animated advertisements, interactive web experiences, and dynamic content without requiring manual frame-by-frame masking."
+        },
+        "item-10": {
+          "question": "What is recoverable occlusion?",
+          "answer": "Recoverable occlusion is the ability to reconstruct visual information that is hidden behind other objects in an image. Traditional methods see only what's visible. Qwen-Image-Layered attempts to understand the full 3D scene structure and generate layers that include portions of objects that may be partially blocked, enabling more accurate edits when moving or rearranging elements."
+        },
+        "item-11": {
+          "question": "How does this technology compare to Photoshop layers?",
+          "answer": "Photoshop layers require manual creation - artists must mask, separate, and organize each element by hand. Qwen-Image-Layered automates this process using AI to analyze a flat image and intelligently decompose it into meaningful layers. Think of it as converting a final JPEG back into something resembling an original Photoshop project file, with separate elements that can be edited independently."
+        },
+        "item-12": {
+          "question": "What file formats support layered images?",
+          "answer": "Professional layered workflows use formats that support multiple layers and alpha channels: PSD (Photoshop Document), AI (Adobe Illustrator), SKETCH (for UI design), and specialized formats like OpenEXR for high-dynamic-range imaging. The RGBA layers output by Qwen-Image-Layered can be composited into any of these formats for further editing."
+        },
+        "item-13": {
+          "question": "How can I use layer-based editing workflows right now?",
+          "answer": "While waiting for Qwen-Image-Layered to become commercially available, you can apply layer-based thinking using existing AI tools: use background removal to isolate subjects, leverage inpainting for regional edits, employ object-level manipulation to swap or replace elements, and use prompt-guided editing to make targeted changes. This modular approach approximates layered workflows even without automatic decomposition."
+        },
+        "item-14": {
+          "question": "Will layered image models replace traditional photo editing?",
+          "answer": "Layered models will likely complement rather than replace traditional editing. They excel at decomposition - the challenging task of separating elements. Human creatives will still provide direction, aesthetic judgment, and final refinement. The workflow becomes: AI handles tedious separation work → designers focus on creative composition → faster iteration → better results."
+        },
+        "item-15": {
+          "question": "What are the limitations of current layered image technology?",
+          "answer": "Current limitations include: not yet production-ready for commercial workflows, processing time can be significant for complex scenes, results may vary with image quality and complexity, extremely fine details or reflections can be challenging, and the technology is primarily in research/prototype phase with no guaranteed commercial API timelines."
+        },
+        "item-16": {
+          "question": "How does layered editing improve content scaling?",
+          "answer": "Layered editing transforms one-off creative work into reusable assets. Instead of recreating entire visuals for each new request, you can remix existing elements. A single product photoshoot can generate dozens of ad variations. One lifestyle image can localize to multiple markets. This massively scales content production while reducing costs and maintaining quality consistency."
+        },
+        "item-17": {
+          "question": "Can Qwen-Image-Layered handle text and typography?",
+          "answer": "The model aims to decompose all visual elements, including text. However, handling typography is particularly challenging because text involves precise shapes, readability, and often complex interactions with backgrounds. Research is ongoing, but the goal is to isolate text layers cleanly enough that they can be edited, translated, or restyled while preserving font characteristics and integration with the design."
+        },
+        "item-18": {
+          "question": "What types of images work best with layered decomposition?",
+          "answer": "Images with clear visual separation between elements work best: product photography with distinct objects, portraits with simple backgrounds, graphic designs with layered elements, packaging with text and graphics, and scenes with moderate complexity. Challenging cases include extreme motion blur, heavy visual overlaps, transparent materials like glass or water, and very dense compositions with many small elements."
+        },
+        "item-19": {
+          "question": "How will commercial platforms integrate layered image models?",
+          "answer": "Integration will likely follow a phased approach: Phase 1 - Research demos and developer access (current state). Phase 2 - API access for advanced users and enterprise partners. Phase 3 - Integration into creative tools and SaaS platforms. Phase 4 - Consumer-facing applications with simplified interfaces. Timeline depends on model stability, computational efficiency, and licensing arrangements."
+        },
+        "item-20": {
+          "question": "What's the strategic value of learning layered editing now?",
+          "answer": "Learning layered editing mindset now positions you ahead of the technology curve. When automated layer decomposition becomes commercially available, you'll already understand how to leverage it. You'll know which workflows benefit most, how to structure assets for maximum reusability, and how to integrate layered outputs into your creative pipeline. Early adopters will gain significant competitive advantages in speed, efficiency, and creative capabilities."
         }
       }
     },
