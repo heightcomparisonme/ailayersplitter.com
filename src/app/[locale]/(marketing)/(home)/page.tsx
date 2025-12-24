@@ -6,10 +6,11 @@ import Features3Section from '@/components/blocks/features/features3';
 import HeroSection from '@/components/blocks/hero/hero';
 import IntegrationSection from '@/components/blocks/integration/integration';
 import Integration2Section from '@/components/blocks/integration/integration2';
-import LogoCloud from '@/components/blocks/logo-cloud/logo-cloud';
-import PricingSection from '@/components/blocks/pricing/pricing';
+// import LogoCloud from '@/components/blocks/logo-cloud/logo-cloud';
+// import PricingSection from '@/components/blocks/pricing/pricing';
 import StatsSection from '@/components/blocks/stats/stats';
 import TestimonialsSection from '@/components/blocks/testimonials/testimonials';
+import IntroductionSection from '@/components/blocks/introduction/introduction';
 import CrispChat from '@/components/layout/crisp-chat';
 import { NewsletterCard } from '@/components/newsletter/newsletter-card';
 import { constructMetadata } from '@/lib/metadata';
@@ -50,7 +51,9 @@ export default async function HomePage(props: HomePageProps) {
       <div className="flex flex-col">
         <HeroSection />
 
-        <LogoCloud />
+        <IntroductionSection />
+
+        {/* <LogoCloud /> */}
 
         <StatsSection />
 
@@ -64,7 +67,7 @@ export default async function HomePage(props: HomePageProps) {
 
         <Integration2Section />
 
-        <PricingSection />
+        {/* <PricingSection /> */}
 
         <FaqSection />
 

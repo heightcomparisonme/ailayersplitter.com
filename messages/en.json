@@ -1,8 +1,8 @@
 {
   "Metadata": {
-    "name": "MkSaaS Demo",
-    "title": "MkSaaS - The Best AI SaaS Boilerplate",
-    "description": "MkSaaS is the best AI SaaS boilerplate. Make AI SaaS in days, simply and effortlessly"
+    "name": "Qwen Image Layered",
+    "title": "Qwen Image Layered - Ai Layer Splitter  Tool",
+    "description": "Qwen Image Layered automatically decomposes any image into editable RGBA layers with AI. Free, open-source Photoshop alternative for e-commerce, design, and content creation."
   },
   "Common": {
     "premium": "Premium",
@@ -142,13 +142,13 @@
     "backToHome": "Back to home"
   },
   "AboutPage": {
-    "title": "About",
-    "description": "This is MkSaaS, an AI SaaS template built with modern technologies, helping you build your SaaS faster and better.",
-    "authorName": "MkSaaS",
-    "authorBio": "AI SaaS Boilerplate",
-    "introduction": "👋 Hi there! This is MkSaaS, an AI SaaS template built with modern technologies, helping you build your SaaS faster and better. If you have any questions, welcome to contact me.",
-    "talkWithMe": "Talk with me",
-    "followMe": "Follow me on X"
+    "title": "About Qwen Image Layered",
+    "description": "Qwen Image Layered is a revolutionary AI-powered image layer decomposition tool that automatically separates images into editable RGBA layers.",
+    "authorName": "Qwen Image Layered",
+    "authorBio": "AI Image Layer Decomposition Tool",
+    "introduction": "👋 Hi there! This is Qwen Image Layered, an AI-powered tool that automatically decomposes any image into editable RGBA layers. No Photoshop skills required - Qwen Image Layered does the work for you. If you have any questions, welcome to contact us.",
+    "talkWithMe": "Talk with us",
+    "followMe": "Follow Qwen Image Layered"
   },
   "ChangelogPage": {
     "title": "Changelog",
@@ -315,7 +315,7 @@
   "Marketing": {
     "navbar": {
       "features": {
-        "title": "Features"
+        "title": "Qwen Image Layered Features"
       },
       "pricing": {
         "title": "Pricing"
@@ -449,7 +449,7 @@
       }
     },
     "footer": {
-      "tagline": "Make AI SaaS in days, simply and effortlessly",
+      "tagline": "Qwen Image Layered - Ai Layer Splitter  Tool",
       "product": {
         "title": "Product",
         "items": {
@@ -789,17 +789,46 @@
     }
   },
   "HomePage": {
-    "title": "MkSaaS",
-    "description": "Make AI SaaS in days, simply and effortlessly",
+    "title": "Qwen Image Layered",
+    "description": "Qwen Image Layered - Ai Layer Splitter  Tool. Automatically decompose any image into editable RGBA layers with AI.",
     "hero": {
-      "title": "Make AI SaaS in days, simply and effortlessly",
-      "description": "The is a demo website built with MkSaaS, a Next.js SaaS boilerplate to help you build your AI SaaS faster and better.",
-      "introduction": "Introducing MkSaaS Boilerplate",
-      "primary": "Get Started",
+      "title": "Qwen Image Layered - Ai Layer Splitter ",
+      "description": "Qwen Image Layered automatically decomposes any image into multiple editable RGBA layers. No Photoshop skills required - Qwen Image Layered AI does the work for you.",
+      "introduction": "Introducing Qwen Image Layered",
+      "primary": "Try Qwen Image Layered",
       "secondary": "See Demo"
     },
     "logocloud": {
-      "title": "Your favorite companies are our partners"
+      "title": "Trusted by designers using Qwen Image Layered worldwide"
+    },
+    "introduction": {
+      "title": "What is Qwen Image Layered",
+      "description": "Qwen Image Layered is an advanced AI model capable of decomposing an image into multiple RGBA layers. This layered representation unlocks inherent editability - each layer can be independently manipulated without affecting other content.",
+      "feature1": {
+        "title": "AI-Powered Layer Decomposition",
+        "description": "Qwen Image Layered automatically separates your image into multiple editable layers with transparency. No manual selection or masking needed."
+      },
+      "feature2": {
+        "title": "Smart Background Reconstruction",
+        "description": "Qwen Image Layered intelligently fills in hidden areas behind objects, creating complete layers ready for editing."
+      },
+      "feature3": {
+        "title": "High-Fidelity Editing",
+        "description": "Qwen Image Layered naturally supports high-fidelity elementary operations such as resizing, repositioning, and recoloring."
+      },
+      "feature4": {
+        "title": "Flexible Layer Control",
+        "description": "Qwen Image Layered supports 3-8+ layers based on image complexity. Decompose layers recursively for infinite refinement."
+      },
+      "feature5": {
+        "title": "Independent Layer Manipulation",
+        "description": "With Qwen Image Layered, resize, recolor, move, or replace objects independently without affecting other layers."
+      },
+      "feature6": {
+        "title": "Professional Results",
+        "description": "Qwen Image Layered enables high-fidelity and consistent editing that was previously only possible with manual Photoshop work."
+      },
+      "bottomText": "Qwen Image Layered represents a paradigm shift in image editing. Try Qwen Image Layered today and discover how AI can transform your creative workflow."
     },
     "integration": {
       "title": "Integrations",
@@ -840,25 +869,25 @@
       "secondaryButton": "See Demo"
     },
     "features": {
-      "title": "Features",
-      "subtitle": "The features of your product",
-      "description": "Write the description of your product here",
+      "title": "Qwen Image Layered Features",
+      "subtitle": "Ai Layer Splitter ",
+      "description": "Discover how Qwen Image Layered transforms your image editing workflow with AI-powered automation",
       "items": {
         "item-1": {
-          "title": "Product Feature One",
-          "description": "Please write the detailed description of feature one here, make it as detailed as possible, make it more attractive to users"
+          "title": "Automatic Layer Decomposition",
+          "description": "Qwen Image Layered AI automatically separates your image into multiple editable layers with transparency. No manual selection or masking needed with Qwen Image Layered."
         },
         "item-2": {
-          "title": "Product Feature Two",
-          "description": "Please write the detailed description of feature two here, make it as detailed as possible, make it more attractive to users"
+          "title": "Smart Background Reconstruction",
+          "description": "Qwen Image Layered intelligently fills in hidden areas behind objects, creating complete layers ready for editing. Perfect for object removal and replacement with Qwen Image Layered."
         },
         "item-3": {
-          "title": "Product Feature Three",
-          "description": "Please write the detailed description of feature three here, make it as detailed as possible, make it more attractive to users"
+          "title": "Flexible Layer Control",
+          "description": "Qwen Image Layered supports 3-8+ layers based on image complexity. Decompose layers recursively with Qwen Image Layered for infinite refinement and precision."
         },
         "item-4": {
-          "title": "Product Feature Four",
-          "description": "Please write the detailed description of feature four here, make it as detailed as possible, make it more attractive to users"
+          "title": "Easy Editing Operations",
+          "description": "With Qwen Image Layered, resize, recolor, move, or replace objects independently without affecting other layers. High-fidelity editing made simple by Qwen Image Layered."
         }
       }
     },
@@ -934,8 +963,8 @@
       }
     },
     "testimonials": {
-      "title": "Testimonials",
-      "subtitle": "What our customers are saying",
+      "title": "Qwen Image Layered Reviews",
+      "subtitle": "What users say about Qwen Image Layered",
       "items": {
         "item-1": {
           "name": "Jonathan Yombo",
@@ -1012,9 +1041,9 @@
       }
     },
     "stats": {
-      "title": "Stats",
-      "subtitle": "MkSaaS in numbers",
-      "description": "MkSaaS lets you make AI SaaS in days, simply and effortlessly",
+      "title": "Qwen Image Layered Stats",
+      "subtitle": "Qwen Image Layered in numbers",
+      "description": "Qwen Image Layered - The Ai Layer Splitter  tool trusted by thousands",
       "items": {
         "item-1": {
           "title": "Stars on GitHub"
@@ -1028,10 +1057,10 @@
       }
     },
     "calltoaction": {
-      "title": "Start Building",
-      "description": "MkSaaS lets you make AI SaaS in days, simply and effortlessly",
-      "primaryButton": "Get Started",
-      "secondaryButton": "See Demo"
+      "title": "Start Using Qwen Image Layered",
+      "description": "Qwen Image Layered automatically decomposes any image into editable RGBA layers. Try Qwen Image Layered now!",
+      "primaryButton": "Try Qwen Image Layered",
+      "secondaryButton": "Watch Demo"
     }
   },
   "AITextPage": {

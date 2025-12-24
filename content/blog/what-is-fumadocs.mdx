@@ -1,62 +1,84 @@
 ---
-title: What is Fumadocs
-description: Introducing Fumadocs, a docs framework that you can break.
+title: What is Qwen Image Layered
+description: Introducing Qwen Image Layered - Revolutionary AI Image Layer Decomposition Tool for automatic RGBA layer separation
 image: /images/blog/post-1.png
 date: "2025-04-01"
 published: true
-categories: [company, product]
-author: fox
+categories: [ai, image-editing, qwen]
+author: Qwen Image Layered Team
 ---
 
-Fumadocs was created because I wanted a more customisable experience for building docs, to be a docs framework that is not opinionated, **a "framework" that you can break**.
+Qwen Image Layered was created to revolutionize image editing through AI-powered layer decomposition, making professional image editing accessible to everyone without Photoshop skills. **Qwen Image Layered automatically decomposes any image into editable RGBA layers**.
 
-## Philosophy
+## What is Qwen Image Layered
 
-**Less Abstraction:** Fumadocs expects you to write code and cooperate with the rest of your software.
-While most frameworks are configured with a configuration file, they usually lack flexibility when you hope to tune its details.
-You can’t control how they render the page nor the internal logic. Fumadocs shows you how the app works, instead of a single configuration file.
+**AI-Powered Layer Decomposition:** Qwen Image Layered is an advanced AI model capable of decomposing an image into multiple RGBA layers. This layered representation unlocks **inherent editability** - each layer can be independently manipulated without affecting other content.
 
-**Next.js Fundamentals:** It gives you the utilities and a good-looking UI.
-You are still using features of Next.js App Router, like **Static Site Generation**. There is nothing new for Next.js developers, so you can use it with confidence.
+Qwen Image Layered naturally supports **high-fidelity elementary operations** such as resizing, repositioning, and recoloring. By physically isolating semantic or structural components into distinct layers, Qwen Image Layered enables high-fidelity and consistent editing that was previously only possible with manual Photoshop work.
 
-**Opinionated on UI:** The only thing Fumadocs UI (the default theme) offers is **User Interface**. The UI is opinionated for bringing better mobile responsiveness and user experience.
-Instead, we use a much more flexible approach inspired by Shadcn UI — [Fumadocs CLI](/docs/cli), so we can iterate our design quick, and welcome for more feedback about the UI.
+## Key Features
 
-## Why Fumadocs
+**Automatic Layer Separation:** Qwen Image Layered AI automatically separates your image into multiple editable layers with transparency. No manual selection or masking needed - Qwen Image Layered does all the work for you.
 
-Fumadocs is designed with flexibility in mind.
+**Smart Background Reconstruction:** Qwen Image Layered intelligently fills in hidden areas behind objects, creating complete layers ready for editing. This is perfect for object removal and replacement tasks.
 
-You can use `fumadocs-core` as a headless UI library and bring your own styles.
-Fumadocs MDX is also a useful library to handle MDX content in Next.js. It also includes:
+**Flexible Layer Control:** Qwen Image Layered supports 3-8+ layers based on image complexity. You can decompose layers recursively with Qwen Image Layered for infinite refinement and precision.
 
-- Many built-in components.
-- Typescript Twoslash, OpenAPI, and Math (KaTeX) integrations.
-- Fast and optimized by default, natively built on App Router.
-- Tight integration with Next.js, you can add it to an existing Next.js project easily.
+**Easy Editing Operations:** With Qwen Image Layered, resize, recolor, move, or replace objects independently without affecting other layers. High-fidelity editing made simple by Qwen Image Layered.
 
-You can read [Comparisons](/docs/comparisons) if you're interested.
+## Layered Editing in Action
 
-### Documentation
+Given an image, Qwen Image Layered can decompose it into several RGBA layers. After decomposition, edits are applied exclusively to the target layer, physically isolating it from the rest of the content, and thereby fundamentally ensuring consistency across edits.
 
-Fumadocs focuses on **authoring experience**, it provides a beautiful theme and many docs automation tools.
+For example, with Qwen Image Layered you can:
 
-It helps you to iterate your codebase faster while never leaving your docs behind.
-You can take this site as an example of docs site built with Fumadocs.
+- **Recolor objects** - Change the color of any layer while keeping all other content untouched
+- **Replace elements** - Replace objects in specific layers (like changing a person from girl to boy)
+- **Edit text** - Modify text content in specific layers
+- **Delete objects** - Remove unwanted objects cleanly without affecting background
+- **Resize without distortion** - Scale objects up or down while maintaining quality
+- **Move objects freely** - Reposition any element within the canvas
 
-### Blog sites
+## Flexible and Iterative Decomposition
 
-Since Next.js is already a powerful framework, most features can be implemented with **just Next.js**.
+Qwen Image Layered is not limited to a fixed number of layers. The model supports variable-layer decomposition. For example, Qwen Image Layered can decompose an image into either 3 or 8 layers as needed, depending on your requirements.
 
-Fumadocs provides additional tooling for Next.js, including syntax highlighting, document search, and a default theme (Fumadocs UI).
-It helps you to avoid reinventing the wheels.
+Moreover, decomposition with Qwen Image Layered can be applied recursively: any layer can itself be further decomposed, enabling infinite decomposition possibilities for complex editing tasks.
 
-## When to use Fumadocs
+## Why Qwen Image Layered
 
-For most of the web applications, vanilla React.js is no longer enough.
-Nowadays, we also wish to have a blog, a showcase page, a FAQ page, etc. With a
-fancy UI that's breathtaking, in these cases, Fumadocs can help you build the
-docs easier, with less boilerplate.
+**Time-Saving:** Qwen Image Layered completes layer decomposition in 2-5 minutes, compared to 30-60 minutes of manual work in Photoshop.
 
-Fumadocs is maintained by Fuma and many contributors, with care on the maintainability of codebase.
-While we don't aim to offer every functionality people wanted, we're more focused on making basic features perfect and well-maintained.
-You can also help Fumadocs to be more useful by contributing!
+**Cost-Effective:** Qwen Image Layered is free and open-source (Apache 2.0 license). No subscriptions, no usage limits, and full control over your data.
+
+**Beginner-Friendly:** Qwen Image Layered requires no professional skills - anyone can achieve professional-level image editing results.
+
+**Multiple Layer Output:** Unlike background removal tools that only output one layer, Qwen Image Layered generates multiple RGBA layers with complete background reconstruction.
+
+**Automatic Processing:** Qwen Image Layered handles background reconstruction automatically - no manual painting or editing required.
+
+## Use Cases
+
+Qwen Image Layered is perfect for:
+
+- **E-commerce**: Product photo editing and background replacement
+- **Graphic Design**: Quick layer separation for design projects
+- **Content Creation**: Easy image manipulation for social media and marketing
+- **Photo Editing**: Professional-quality edits without Photoshop expertise
+- **Print Design**: Prepare images for various print formats
+
+## Getting Started
+
+Qwen Image Layered is available as open-source software under Apache 2.0 license. You can integrate Qwen Image Layered into your workflow or use it through our web interface.
+
+Join thousands of designers and creators who are already using Qwen Image Layered to transform their image editing workflow. Experience the power of AI-driven layer decomposition with Qwen Image Layered.
+
+## The Future of Image Editing
+
+Qwen Image Layered represents a paradigm shift in image editing. By leveraging AI for automatic layer decomposition, Qwen Image Layered democratizes professional image editing capabilities previously reserved for Photoshop experts.
+
+As Qwen Image Layered continues to evolve, we're committed to making advanced image editing accessible to everyone. Try Qwen Image Layered today and discover how AI can transform your creative workflow.
+
+---
+
+**Qwen Image Layered** - Revolutionary AI Image Layer Decomposition Tool. Automatically decompose any image into editable RGBA layers with AI. No Photoshop skills required.

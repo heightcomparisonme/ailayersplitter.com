@@ -801,6 +801,35 @@
     "logocloud": {
       "title": "您最爱公司都是我们的合作伙伴"
     },
+    "introduction": {
+      "title": "什么是 Qwen Image Layered",
+      "description": "Qwen Image Layered 是一个先进的 AI 模型，能够将图像分解为多个 RGBA 图层。这种分层表示解锁了固有的可编辑性 - 每个图层都可以独立操作而不影响其他内容。",
+      "feature1": {
+        "title": "AI 驱动的图层分解",
+        "description": "Qwen Image Layered 自动将您的图像分离为多个带有透明度的可编辑图层。无需手动选择或遮罩。"
+      },
+      "feature2": {
+        "title": "智能背景重建",
+        "description": "Qwen Image Layered 智能地填充对象后面的隐藏区域，创建准备好进行编辑的完整图层。"
+      },
+      "feature3": {
+        "title": "高保真编辑",
+        "description": "Qwen Image Layered 自然支持高保真的基本操作，如调整大小、重新定位和重新着色。"
+      },
+      "feature4": {
+        "title": "灵活的图层控制",
+        "description": "Qwen Image Layered 根据图像复杂度支持 3-8+ 个图层。可以递归分解图层以实现无限精细。"
+      },
+      "feature5": {
+        "title": "独立图层操作",
+        "description": "使用 Qwen Image Layered，可以独立调整大小、重新着色、移动或替换对象而不影响其他图层。"
+      },
+      "feature6": {
+        "title": "专业级结果",
+        "description": "Qwen Image Layered 实现了高保真和一致的编辑，这以前只能通过手动 Photoshop 工作实现。"
+      },
+      "bottomText": "Qwen Image Layered 代表了图像编辑的范式转变。今天就试试 Qwen Image Layered，发现 AI 如何改变您的创意工作流程。"
+    },
     "integration": {
       "title": "集成",
       "subtitle": "与您最喜欢的工具集成",

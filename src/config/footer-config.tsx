@@ -27,11 +27,11 @@ export function useFooterLinks(): NestedMenuItem[] {
           href: Routes.Features,
           external: false,
         },
-        {
-          title: t('product.items.pricing'),
-          href: Routes.Pricing,
-          external: false,
-        },
+        // {
+        //   title: t('product.items.pricing'),
+        //   href: Routes.Pricing,
+        //   external: false,
+        // },
         {
           title: t('product.items.faq'),
           href: Routes.FAQ,
@@ -51,15 +51,15 @@ export function useFooterLinks(): NestedMenuItem[] {
               },
             ]
           : []),
-        ...(websiteConfig.docs.enable
-          ? [
-              {
-                title: t('resources.items.docs'),
-                href: Routes.Docs,
-                external: false,
-              },
-            ]
-          : []),
+        // ...(websiteConfig.docs.enable
+        //   ? [
+        //       {
+        //         title: t('resources.items.docs'),
+        //         href: Routes.Docs,
+        //         external: false,
+        //       },
+        //     ]
+        //   : []),
         {
           title: t('resources.items.changelog'),
           href: Routes.Changelog,
