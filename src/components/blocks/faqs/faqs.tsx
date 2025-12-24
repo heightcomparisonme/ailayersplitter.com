@@ -33,12 +33,29 @@ const transitionVariants = {
 export default function FaqSection() {
   const t = useTranslations('HomePage.faqs');
 
-  // Generate all 20 FAQ items dynamically
-  const faqItems = Array.from({ length: 20 }, (_, i) => ({
-    id: `item-${i + 1}`,
-    question: t(`items.item-${i + 1}.question`),
-    answer: t(`items.item-${i + 1}.answer`),
-  }));
+  // Define all 20 FAQ items explicitly for type safety
+  const faqItems = [
+    { id: 'item-1', question: t('items.item-1.question'), answer: t('items.item-1.answer') },
+    { id: 'item-2', question: t('items.item-2.question'), answer: t('items.item-2.answer') },
+    { id: 'item-3', question: t('items.item-3.question'), answer: t('items.item-3.answer') },
+    { id: 'item-4', question: t('items.item-4.question'), answer: t('items.item-4.answer') },
+    { id: 'item-5', question: t('items.item-5.question'), answer: t('items.item-5.answer') },
+    { id: 'item-6', question: t('items.item-6.question'), answer: t('items.item-6.answer') },
+    { id: 'item-7', question: t('items.item-7.question'), answer: t('items.item-7.answer') },
+    { id: 'item-8', question: t('items.item-8.question'), answer: t('items.item-8.answer') },
+    { id: 'item-9', question: t('items.item-9.question'), answer: t('items.item-9.answer') },
+    { id: 'item-10', question: t('items.item-10.question'), answer: t('items.item-10.answer') },
+    { id: 'item-11', question: t('items.item-11.question'), answer: t('items.item-11.answer') },
+    { id: 'item-12', question: t('items.item-12.question'), answer: t('items.item-12.answer') },
+    { id: 'item-13', question: t('items.item-13.question'), answer: t('items.item-13.answer') },
+    { id: 'item-14', question: t('items.item-14.question'), answer: t('items.item-14.answer') },
+    { id: 'item-15', question: t('items.item-15.question'), answer: t('items.item-15.answer') },
+    { id: 'item-16', question: t('items.item-16.question'), answer: t('items.item-16.answer') },
+    { id: 'item-17', question: t('items.item-17.question'), answer: t('items.item-17.answer') },
+    { id: 'item-18', question: t('items.item-18.question'), answer: t('items.item-18.answer') },
+    { id: 'item-19', question: t('items.item-19.question'), answer: t('items.item-19.answer') },
+    { id: 'item-20', question: t('items.item-20.question'), answer: t('items.item-20.answer') },
+  ];
 
   return (
     <section id="faqs" className="bg-muted/30 px-4 py-24">

@@ -3,17 +3,22 @@
 import { AnimatedGroup } from '@/components/tailark/motion/animated-group';
 import { TextEffect } from '@/components/tailark/motion/text-effect';
 import { useLocalePathname, useLocaleRouter } from '@/i18n/navigation';
-import { LOCALES, type Locale } from '@/i18n/routing';
+import { LOCALES } from '@/i18n/routing';
 import { Check } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
 
 const LOCALE_PREFERENCE_COOKIE = 'NEXT_LOCALE_PREFERENCE';
 const PREFERENCE_SECONDS = 60 * 60 * 24 * 365;
 
-const REGION_DATA: Record<Locale, { labelKey: string; countryCode: string }> = {
+const REGION_DATA = {
   en: { labelKey: 'locales.en', countryCode: 'gb' },
   zh: { labelKey: 'locales.zh', countryCode: 'cn' },
-};
+} as const;
+
+type RegionLocale = keyof typeof REGION_DATA;
+
+const isRegionLocale = (value: string): value is RegionLocale =>
+  value in REGION_DATA;
 
 const transitionVariants = {
   item: {
@@ -48,7 +53,7 @@ export default function RegionSelect() {
   const router = useLocaleRouter();
   const pathname = useLocalePathname();
 
-  const handleSelect = (locale: Locale) => {
+  const handleSelect = (locale: RegionLocale) => {
     setLocalePreference(locale);
     router.push(pathname, { locale });
   };
@@ -76,18 +81,17 @@ export default function RegionSelect() {
           {/* Region Cards */}
           <div className="flex justify-center gap-6 flex-wrap">
             {LOCALES.map((localeKey) => {
-              const locale = localeKey as Locale;
-              const data = REGION_DATA[locale];
-              if (!data) return null;
+              if (!isRegionLocale(localeKey)) return null;
+              const data = REGION_DATA[localeKey];
 
               const label = t(data.labelKey);
-              const isSelected = currentLocale === locale;
+              const isSelected = currentLocale === localeKey;
 
               return (
                 <button
-                  key={locale}
+                  key={localeKey}
                   type="button"
-                  onClick={() => handleSelect(locale)}
+                  onClick={() => handleSelect(localeKey)}
                   aria-pressed={isSelected}
                   className={`group relative flex items-center gap-3 rounded-2xl border bg-background/50 backdrop-blur-sm px-8 py-6 text-left transition-all duration-300 hover:shadow-xl hover:scale-[1.02] min-w-[200px] ${
                     isSelected
