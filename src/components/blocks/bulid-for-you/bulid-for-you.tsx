@@ -2,17 +2,17 @@
 
 import { AnimatedGroup } from '@/components/tailark/motion/animated-group';
 import { TextEffect } from '@/components/tailark/motion/text-effect';
-import { useTranslations } from 'next-intl';
 import {
+  BookOpen,
+  Building2,
+  Gamepad2,
+  Glasses,
+  Mic,
   Palette,
   ShoppingBag,
-  Gamepad2,
   Video,
-  Glasses,
-  BookOpen,
-  Mic,
-  Building2,
 } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 const transitionVariants = {
   item: {
@@ -100,10 +100,7 @@ export default function BuildForYouSection() {
       icon: <Glasses className="h-6 w-6" />,
       title: t('audience5.title'),
       description: t('audience5.description'),
-      useCases: [
-        t('audience5.useCase1'),
-        t('audience5.useCase2'),
-      ],
+      useCases: [t('audience5.useCase1'), t('audience5.useCase2')],
       priority: 4,
     },
     {
@@ -111,10 +108,7 @@ export default function BuildForYouSection() {
       icon: <BookOpen className="h-6 w-6" />,
       title: t('audience6.title'),
       description: t('audience6.description'),
-      useCases: [
-        t('audience6.useCase1'),
-        t('audience6.useCase2'),
-      ],
+      useCases: [t('audience6.useCase1'), t('audience6.useCase2')],
       priority: 3,
     },
     {
@@ -122,10 +116,7 @@ export default function BuildForYouSection() {
       icon: <Mic className="h-6 w-6" />,
       title: t('audience7.title'),
       description: t('audience7.description'),
-      useCases: [
-        t('audience7.useCase1'),
-        t('audience7.useCase2'),
-      ],
+      useCases: [t('audience7.useCase1'), t('audience7.useCase2')],
       priority: 3,
     },
     {
@@ -133,10 +124,7 @@ export default function BuildForYouSection() {
       icon: <Building2 className="h-6 w-6" />,
       title: t('audience8.title'),
       description: t('audience8.description'),
-      useCases: [
-        t('audience8.useCase1'),
-        t('audience8.useCase2'),
-      ],
+      useCases: [t('audience8.useCase1'), t('audience8.useCase2')],
       priority: 3,
     },
   ];
@@ -163,7 +151,7 @@ export default function BuildForYouSection() {
 
           {/* Core Audience - Priority 5 */}
           <div className="mb-12">
-            <div className="flex items-center gap-2 mb-6">
+            <div className="flex items-center justify-center gap-2 mb-6">
               <div className="flex">
                 {[1, 2, 3, 4, 5].map((star) => (
                   <svg
@@ -218,7 +206,7 @@ export default function BuildForYouSection() {
 
           {/* Extended Audience - Priority 3-4 */}
           <div>
-            <div className="flex items-center gap-2 mb-6">
+            <div className="flex items-center justify-center gap-2 mb-6">
               <div className="flex">
                 {[1, 2, 3, 4].map((star) => (
                   <svg

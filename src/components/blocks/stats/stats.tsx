@@ -1,3 +1,4 @@
+﻿import UserRating from '@/components/blocks/stats/UserRating';
 import { HeaderSection } from '@/components/layout/header-section';
 import { useTranslations } from 'next-intl';
 
@@ -28,6 +29,10 @@ export default function StatsSection() {
             <div className="text-5xl font-bold text-primary">+500</div>
             <p>{t('items.item-3.title')}</p>
           </div>
+        </div>
+
+        <div className="mx-auto w-full max-w-3xl">
+          <UserRating />
         </div>
       </div>
     </section>

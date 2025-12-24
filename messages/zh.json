@@ -1139,6 +1139,24 @@
       "secondaryButton": "查看演示"
     }
   },
+  "Rating": {
+    "title": "为 Image Layered 分层打分",
+    "subtitle": "你的反馈会帮助 Ai Layer Splitter Tool 持续优化",
+    "votes": "人评价",
+    "thankYouTitle": "感谢你的评分",
+    "thankYouMessage": "反馈已收到，我们会继续提升分层质量。",
+    "surveyPrompt": "哪里不满意？欢迎简单说明。",
+    "surveyPlaceholder": "比如背景渗色、层级缺失、文字识别...",
+    "submitButton": "提交反馈"
+  },
+  "RegionSelect": {
+    "title": "语言与地区",
+    "subtitle": "选择你偏好的地区与语言",
+    "locales": {
+      "en": "English",
+      "zh": "中文"
+    }
+  },
   "AITextPage": {
     "title": "AI 文本",
     "description": "使用 AI 分析网页内容，提取关键信息、功能和见解",

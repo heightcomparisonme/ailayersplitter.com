@@ -1,3 +1,4 @@
+import IframeDemo from '@/components/blocks/iframe/iframe';
 import { Ripple } from '@/components/magicui/ripple';
 import { AnimatedGroup } from '@/components/tailark/motion/animated-group';
 import { TextEffect } from '@/components/tailark/motion/text-effect';
@@ -5,7 +6,6 @@ import { Button } from '@/components/ui/button';
 import { LocaleLink } from '@/i18n/navigation';
 import { ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 
 const transitionVariants = {
   item: {
@@ -161,22 +161,7 @@ export default function HeroSection() {
                   aria-hidden
                   className="bg-linear-to-b to-muted/50 absolute inset-0 z-10 from-transparent from-35%"
                 />
-                <div className="inset-shadow-2xs ring-muted/50 dark:inset-shadow-white/20 bg-muted/50 relative mx-auto max-w-6xl overflow-hidden rounded-2xl border p-4 shadow-lg shadow-zinc-950/15 ring-1">
-                  <Image
-                    className="bg-muted/50 relative hidden rounded-2xl dark:block"
-                    src="/blocks/music.png"
-                    alt="app screen"
-                    width={2796}
-                    height={2008}
-                  />
-                  <Image
-                    className="z-2 border-border/25 relative rounded-2xl border dark:hidden"
-                    src="/blocks/music-light.png"
-                    alt="app screen"
-                    width={2796}
-                    height={2008}
-                  />
-                </div>
+                <IframeDemo />
               </div>
             </AnimatedGroup>
           </div>

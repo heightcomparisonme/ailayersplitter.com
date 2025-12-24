@@ -1,18 +1,19 @@
+import BuildForYouSection from '@/components/blocks/bulid-for-you/bulid-for-you';
 import CallToActionSection from '@/components/blocks/calltoaction/calltoaction';
 import FaqSection from '@/components/blocks/faqs/faqs';
 import FeaturesSection from '@/components/blocks/features/features';
 import Features2Section from '@/components/blocks/features/features2';
 import Features3Section from '@/components/blocks/features/features3';
 import HeroSection from '@/components/blocks/hero/hero';
+import IntroductionSection from '@/components/blocks/introduction/introduction';
+import RegionSelect from '@/components/blocks/regionselect/region-select';
+import ShowcaseSection from '@/components/blocks/showcase/showcase';
 // import IntegrationSection from '@/components/blocks/integration/integration';
 // import Integration2Section from '@/components/blocks/integration/integration2';
 // import LogoCloud from '@/components/blocks/logo-cloud/logo-cloud';
 // import PricingSection from '@/components/blocks/pricing/pricing';
 import StatsSection from '@/components/blocks/stats/stats';
 import TestimonialsSection from '@/components/blocks/testimonials/testimonials';
-import IntroductionSection from '@/components/blocks/introduction/introduction';
-import ShowcaseSection from '@/components/blocks/showcase/showcase';
-import BuildForYouSection from '@/components/blocks/bulid-for-you/bulid-for-you';
 import CrispChat from '@/components/layout/crisp-chat';
 import { NewsletterCard } from '@/components/newsletter/newsletter-card';
 import { constructMetadata } from '@/lib/metadata';
@@ -61,8 +62,6 @@ export default async function HomePage(props: HomePageProps) {
 
         {/* <LogoCloud /> */}
 
-
-
         {/* <IntegrationSection /> */}
 
         <FeaturesSection />
@@ -80,6 +79,8 @@ export default async function HomePage(props: HomePageProps) {
         <CallToActionSection />
 
         <TestimonialsSection />
+
+        <RegionSelect />
 
         <StatsSection />
 

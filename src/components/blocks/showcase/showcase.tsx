@@ -2,10 +2,10 @@
 
 import { AnimatedGroup } from '@/components/tailark/motion/animated-group';
 import { TextEffect } from '@/components/tailark/motion/text-effect';
+import { X, ZoomIn } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { useState } from 'react';
-import { X, ZoomIn } from 'lucide-react';
 
 const transitionVariants = {
   item: {
@@ -125,7 +125,9 @@ export default function ShowcaseSection() {
                 {/* Content */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white transform translate-y-2 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                  <p className="text-sm text-gray-200 leading-relaxed">{item.description}</p>
+                  <p className="text-sm text-gray-200 leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
 
                 {/* Hover Border Effect */}

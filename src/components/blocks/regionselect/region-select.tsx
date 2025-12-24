@@ -1,13 +1,39 @@
-'use client';
+﻿'use client';
 
-import React from 'react';
+import { AnimatedGroup } from '@/components/tailark/motion/animated-group';
+import { TextEffect } from '@/components/tailark/motion/text-effect';
+import { useLocalePathname, useLocaleRouter } from '@/i18n/navigation';
+import { LOCALES, type Locale } from '@/i18n/routing';
 import { Check } from 'lucide-react';
 import { useLocale, useTranslations } from 'next-intl';
-import { useRouter, usePathname } from '@/i18n/navigation';
-import { LOCALES, type Locale } from '@/i18n/routing';
 
 const LOCALE_PREFERENCE_COOKIE = 'NEXT_LOCALE_PREFERENCE';
 const PREFERENCE_SECONDS = 60 * 60 * 24 * 365;
+
+const REGION_DATA: Record<Locale, { labelKey: string; countryCode: string }> = {
+  en: { labelKey: 'locales.en', countryCode: 'gb' },
+  zh: { labelKey: 'locales.zh', countryCode: 'cn' },
+};
+
+const transitionVariants = {
+  item: {
+    hidden: {
+      opacity: 0,
+      y: 20,
+      scale: 0.95,
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: {
+        type: 'spring',
+        bounce: 0.3,
+        duration: 0.8,
+      },
+    },
+  },
+};
 
 function setLocalePreference(locale: string) {
   if (typeof document === 'undefined') {
@@ -16,93 +42,89 @@ function setLocalePreference(locale: string) {
   document.cookie = `${LOCALE_PREFERENCE_COOKIE}=${encodeURIComponent(locale)}; path=/; max-age=${PREFERENCE_SECONDS}; samesite=lax`;
 }
 
-const REGION_DATA: Record<string, { label: string; countryCode: string }> = {
-  "en": { label: "English", countryCode: "gb" },
-  // "ar": { label: "العربية", countryCode: "sa" },
-  "cn": { label: "简体中文", countryCode: "cn" },
-  // "de": { label: "Deutsch", countryCode: "de" },
-  // "es": { label: "Español", countryCode: "es" },
-  // "fr": { label: "Français", countryCode: "fr" },
-  // "jp": { label: "日本語", countryCode: "jp" },
-  // "kr": { label: "한국어", countryCode: "kr" },
-  // "nl": { label: "Nederlands", countryCode: "nl" },
-  // "pl": { label: "Polski", countryCode: "pl" },
-  // "pt": { label: "Português", countryCode: "pt" },
-  // "ru": { label: "Русский", countryCode: "ru" },
-  // "tw": { label: "繁體中文", countryCode: "tw" },
-  // "vn": { label: "Tiếng Việt", countryCode: "vn" }
-};
-
 export default function RegionSelect() {
   const currentLocale = useLocale();
-  const t = useTranslations('Rating');
-  const router = useRouter();
-  const pathname = usePathname();
+  const t = useTranslations('RegionSelect');
+  const router = useLocaleRouter();
+  const pathname = useLocalePathname();
 
-  const handleSelect = (locale: string) => {
+  const handleSelect = (locale: Locale) => {
     setLocalePreference(locale);
-    router.push(pathname, { locale: locale as Locale });
+    router.push(pathname, { locale });
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto mb-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
-      {/* 标题部分 */}
-      <div className="mb-6 text-center">
-        <h2 className="text-xl font-bold text-white">{t('regionTitle')}</h2>
-        <p className="text-slate-400 text-sm mt-1">{t('regionSubtitle')}</p>
+    <section id="region-select" className="bg-muted/30 px-4 py-24">
+      <div className="mx-auto max-w-7xl px-6">
+        <AnimatedGroup variants={transitionVariants}>
+          {/* Section Title */}
+          <div className="mx-auto max-w-3xl text-center mb-16">
+            <TextEffect
+              per="word"
+              preset="fade-in-blur"
+              speedSegment={0.3}
+              as="h2"
+              className="text-balance text-4xl font-semibold tracking-tight sm:text-5xl"
+            >
+              {t('title')}
+            </TextEffect>
+            <p className="mt-6 text-lg leading-8 text-muted-foreground">
+              {t('subtitle')}
+            </p>
+          </div>
+
+          {/* Region Cards */}
+          <div className="flex justify-center gap-6 flex-wrap">
+            {LOCALES.map((localeKey) => {
+              const locale = localeKey as Locale;
+              const data = REGION_DATA[locale];
+              if (!data) return null;
+
+              const label = t(data.labelKey);
+              const isSelected = currentLocale === locale;
+
+              return (
+                <button
+                  key={locale}
+                  type="button"
+                  onClick={() => handleSelect(locale)}
+                  aria-pressed={isSelected}
+                  className={`group relative flex items-center gap-3 rounded-2xl border bg-background/50 backdrop-blur-sm px-8 py-6 text-left transition-all duration-300 hover:shadow-xl hover:scale-[1.02] min-w-[200px] ${
+                    isSelected
+                      ? 'border-primary/40 bg-primary/10 shadow-lg'
+                      : 'border-border/40 hover:border-border/80'
+                  }`}
+                >
+                  {/* Flag */}
+                  <span className="relative h-8 w-12 overflow-hidden rounded-lg shadow-md">
+                    <img
+                      src={`https://flagcdn.com/w80/${data.countryCode}.png`}
+                      srcSet={`https://flagcdn.com/w160/${data.countryCode}.png 2x`}
+                      alt={label}
+                      className="h-full w-full object-cover transition group-hover:grayscale-0"
+                      loading="lazy"
+                    />
+                    <span className="absolute inset-0 rounded-lg border border-border/40" />
+                  </span>
+
+                  {/* Language Label */}
+                  <span className="text-base font-semibold">{label}</span>
+
+                  {/* Check Icon */}
+                  {isSelected ? (
+                    <span className="ml-auto flex h-6 w-6 items-center justify-center rounded-full bg-primary text-primary-foreground">
+                      <Check className="h-4 w-4" strokeWidth={3} />
+                    </span>
+                  ) : null}
+
+                  {/* Hover Border Effect */}
+                  <div className="absolute inset-0 rounded-2xl border-2 border-primary/0 transition-colors duration-300 group-hover:border-primary/20" />
+                </button>
+              );
+            })}
+          </div>
+        </AnimatedGroup>
       </div>
-
-      {/* --- 核心组件：平铺网格 --- */}
-      <div className="bg-slate-900/50 rounded-2xl p-6 border border-slate-800 backdrop-blur-sm">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-3">
-          {LOCALES.map((key) => {
-            const data = REGION_DATA[key];
-            if (!data) return null;
-            
-            const { label, countryCode } = data;
-            const isSelected = currentLocale === key;
-            
-            return (
-              <button
-                key={key}
-                onClick={() => handleSelect(key)}
-                className={`
-                  group relative flex items-center gap-2.5 px-3 py-2.5 rounded-xl border text-left transition-all duration-300 ease-out outline-none
-                  ${isSelected 
-                    ? 'border-cyan-500 bg-cyan-500/10 text-cyan-400 shadow-[0_0_15px_-3px_rgba(6,182,212,0.3)]' 
-                    : 'border-slate-800 bg-slate-800/40 text-slate-400 hover:border-slate-700 hover:bg-slate-800/60 hover:text-slate-200'}
-                `}
-              >
-                {/* 国旗图片：使用 flagcdn */}
-                <div className="relative w-5 h-3.5 flex-shrink-0 shadow-sm rounded-[2px] overflow-hidden">
-                  <img
-                    src={`https://flagcdn.com/w40/${countryCode}.png`}
-                    srcSet={`https://flagcdn.com/w80/${countryCode}.png 2x`}
-                    alt={label}
-                    className="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 border border-white/5 rounded-[2px]"></div>
-                </div>
-
-                {/* 语言名称 */}
-                <span className={`text-xs font-medium truncate ${isSelected ? 'text-cyan-400' : ''}`}>
-                  {label}
-                </span>
-
-                {/* 选中状态的角标对勾 */}
-                {isSelected && (
-                  <div className="absolute top-1.5 right-1.5 animate-in fade-in zoom-in duration-300">
-                    <div className="bg-cyan-500 rounded-full p-0.5 shadow-sm">
-                      <Check className="w-2 h-2 text-slate-900" strokeWidth={4} />
-                    </div>
-                  </div>
-                )}
-              </button>
-            );
-          })}
-        </div>
-      </div>
-    </div>
+    </section>
   );
 }

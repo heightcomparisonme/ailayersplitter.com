@@ -1139,6 +1139,24 @@
       "secondaryButton": "Watch Demo"
     }
   },
+  "Rating": {
+    "title": "Rate the Image Layered results",
+    "subtitle": "Your feedback helps Ai Layer Splitter Tool improve layer quality",
+    "votes": "votes",
+    "thankYouTitle": "Thanks for your rating",
+    "thankYouMessage": "Your feedback helps us deliver cleaner, editable layers.",
+    "surveyPrompt": "Tell us what didn't work for your image.",
+    "surveyPlaceholder": "Background bleed, missing layers, text issues...",
+    "submitButton": "Send feedback"
+  },
+  "RegionSelect": {
+    "title": "Language",
+    "subtitle": "Choose your preferred region and language",
+    "locales": {
+      "en": "English",
+      "zh": "中文"
+    }
+  },
   "AITextPage": {
     "title": "AI Text Demo",
     "description": "Analyze web content with AI to extract key information, features, and insights",
