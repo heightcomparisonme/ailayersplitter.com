@@ -11,6 +11,7 @@ import HeroSection from '@/components/blocks/hero/hero';
 import StatsSection from '@/components/blocks/stats/stats';
 import TestimonialsSection from '@/components/blocks/testimonials/testimonials';
 import IntroductionSection from '@/components/blocks/introduction/introduction';
+import ShowcaseSection from '@/components/blocks/showcase/showcase';
 import CrispChat from '@/components/layout/crisp-chat';
 import { NewsletterCard } from '@/components/newsletter/newsletter-card';
 import { constructMetadata } from '@/lib/metadata';
@@ -53,9 +54,11 @@ export default async function HomePage(props: HomePageProps) {
 
         <IntroductionSection />
 
+        <ShowcaseSection />
+
         {/* <LogoCloud /> */}
 
-        <StatsSection />
+
 
         {/* <IntegrationSection /> */}
 
@@ -74,6 +77,8 @@ export default async function HomePage(props: HomePageProps) {
         <CallToActionSection />
 
         <TestimonialsSection />
+        
+        <StatsSection />
 
         <NewsletterCard />
 

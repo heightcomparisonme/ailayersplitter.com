@@ -830,6 +830,23 @@
       },
       "bottomText": "Qwen Image Layered 代表了图像编辑的范式转变。今天就试试 Qwen Image Layered，发现 AI 如何改变您的创意工作流程。"
     },
+    "showcase": {
+      "title": "Qwen Image Layered 实际应用展示",
+      "description": "通过真实案例了解 Qwen Image Layered 如何将图像转换为可编辑图层。体验 AI 驱动图层分解的强大功能。",
+      "item1": {
+        "title": "自动图层分离",
+        "description": "Qwen Image Layered 精准地将复杂图像自动分解为多个可编辑的 RGBA 图层。"
+      },
+      "item2": {
+        "title": "智能对象操作",
+        "description": "使用 Qwen Image Layered 的智能图层系统，独立调整大小、重新着色和重新定位对象。"
+      },
+      "item3": {
+        "title": "专业图像编辑",
+        "description": "通过 Qwen Image Layered 的高保真编辑功能，实现工作室级的专业成果。"
+      },
+      "bottomText": "体验 Qwen Image Layered 的革命性力量。上传您的图像，见证 AI 自动创造的奇迹。"
+    },
     "integration": {
       "title": "集成",
       "subtitle": "与您最喜欢的工具集成",

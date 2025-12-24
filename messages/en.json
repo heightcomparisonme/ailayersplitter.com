@@ -830,6 +830,23 @@
       },
       "bottomText": "Qwen Image Layered represents a paradigm shift in image editing. Try Qwen Image Layered today and discover how AI can transform your creative workflow."
     },
+    "showcase": {
+      "title": "Qwen Image Layered in Action",
+      "description": "See how Qwen Image Layered transforms images into editable layers with real-world examples. Experience the power of AI-driven layer decomposition.",
+      "item1": {
+        "title": "Automatic Layer Separation",
+        "description": "Qwen Image Layered automatically decomposes complex images into multiple editable RGBA layers with precision."
+      },
+      "item2": {
+        "title": "Smart Object Manipulation",
+        "description": "Resize, recolor, and reposition objects independently with Qwen Image Layered's intelligent layer system."
+      },
+      "item3": {
+        "title": "Professional Image Editing",
+        "description": "Achieve studio-quality results with Qwen Image Layered's high-fidelity editing capabilities."
+      },
+      "bottomText": "Experience the revolutionary power of Qwen Image Layered. Upload your image and see the magic happen automatically."
+    },
     "integration": {
       "title": "Integrations",
       "subtitle": "Integrate with your favorite tools",
