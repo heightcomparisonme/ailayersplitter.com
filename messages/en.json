@@ -968,42 +968,42 @@
       }
     },
     "features2": {
-      "title": "Features2",
-      "subtitle": "The features of your product",
-      "description": "Write the description of your product here",
-      "feature-1": "Product Feature One",
-      "feature-2": "Product Feature Two",
-      "feature-3": "Product Feature Three",
-      "feature-4": "Product Feature Four"
+      "title": "Real-World Applications",
+      "subtitle": "Transform Your Workflow with Layered Image Editing",
+      "description": "Discover how Qwen Image Layered revolutionizes creative workflows across industries, from e-commerce to marketing, design to localization.",
+      "feature-1": "E-commerce Product Photography",
+      "feature-2": "Multilingual Packaging & Labels",
+      "feature-3": "Object Replacement & Editing",
+      "feature-4": "Background & Environment Swapping"
     },
     "features3": {
-      "title": "Features3",
-      "subtitle": "The features of your product",
-      "description": "Write the description of your product here",
+      "title": "Why Choose Image Layered?",
+      "subtitle": "The Future of Editable Visual Content",
+      "description": "Traditional image editing is time-consuming and destructive. Image Layered technology transforms flat images into infinitely reusable creative assets, saving time and unlocking new possibilities.",
       "items": {
         "item-1": {
-          "title": "Product Feature One",
-          "description": "Please write the detailed description of feature one here"
+          "title": "Infinite Reusability",
+          "description": "Transform one-time images into reusable assets. Single photoshoots generate dozens of variations. A lifestyle image localizes to multiple markets. Layered editing turns static visuals into a supply chain of creative materials."
         },
         "item-2": {
-          "title": "Product Feature Two",
-          "description": "Please write the detailed description of feature two here"
+          "title": "Non-Destructive Editing",
+          "description": "Move objects, swap backgrounds, or recolor elements without losing quality. Unlike traditional editing that modifies pixels destructively, layered editing preserves every element separately, enabling unlimited iterations and perfect reversibility."
         },
         "item-3": {
-          "title": "Product Feature Three",
-          "description": "Please write the detailed description of feature three here"
+          "title": "Dramatic Time Savings",
+          "description": "What once took hours of manual masking and careful reconstruction now happens automatically. AI-powered decomposition separates elements in seconds, not hours. Creative teams iterate faster, deliver more, and focus on creativity instead of tedious separation work."
         },
         "item-4": {
-          "title": "Product Feature Four",
-          "description": "Please write the detailed description of feature four here"
+          "title": "Scalable Content Production",
+          "description": "Generate A/B test variations, localize for global markets, and refresh campaigns without new photoshoots. Layered outputs massively scale content production while maintaining quality consistency and reducing costs."
         },
         "item-5": {
-          "title": "Product Feature Five",
-          "description": "Please write the detailed description of feature five here"
+          "title": "Motion-Ready Assets",
+          "description": "Layered images are animation-ready by design. Each element can move, rotate, or transform independently with clean edges and proper layer ordering. Perfect for video production, animated ads, and interactive web experiences without frame-by-frame masking."
         },
         "item-6": {
-          "title": "Product Feature Six",
-          "description": "Please write the detailed description of feature six here"
+          "title": "Recoverable Occlusion",
+          "description": "Unlike simple segmentation masks, layered editing attempts to understand full 3D scene structure. Elements partially blocked by foreground objects can be reconstructed, enabling accurate edits when rearranging components and revealing hidden visual information."
         }
       }
     },

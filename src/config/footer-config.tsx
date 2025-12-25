@@ -42,15 +42,15 @@ export function useFooterLinks(): NestedMenuItem[] {
     {
       title: t('resources.title'),
       items: [
-        ...(websiteConfig.blog.enable
-          ? [
-              {
-                title: t('resources.items.blog'),
-                href: Routes.Blog,
-                external: false,
-              },
-            ]
-          : []),
+        // ...(websiteConfig.blog.enable
+        //   ? [
+        //       {
+        //         title: t('resources.items.blog'),
+        //         href: Routes.Blog,
+        //         external: false,
+        //       },
+        //     ]
+        //   : []),
         // ...(websiteConfig.docs.enable
         //   ? [
         //       {
@@ -60,56 +60,56 @@ export function useFooterLinks(): NestedMenuItem[] {
         //       },
         //     ]
         //   : []),
-        {
-          title: t('resources.items.changelog'),
-          href: Routes.Changelog,
-          external: false,
-        },
-        {
-          title: t('resources.items.roadmap'),
-          href: Routes.Roadmap,
-          external: false,
-        },
+        // {
+        //   title: t('resources.items.changelog'),
+        //   href: Routes.Changelog,
+        //   external: false,
+        // },
+        // {
+        //   title: t('resources.items.roadmap'),
+        //   href: Routes.Roadmap,
+        //   external: false,
+        // },
       ],
     },
     {
       title: t('company.title'),
       items: [
-        {
-          title: t('company.items.about'),
-          href: Routes.About,
-          external: false,
-        },
-        {
-          title: t('company.items.contact'),
-          href: Routes.Contact,
-          external: false,
-        },
-        {
-          title: t('company.items.waitlist'),
-          href: Routes.Waitlist,
-          external: false,
-        },
+        // {
+        //   title: t('company.items.about'),
+        //   href: Routes.About,
+        //   external: false,
+        // },
+        // {
+        //   title: t('company.items.contact'),
+        //   href: Routes.Contact,
+        //   external: false,
+        // },
+        // {
+        //   title: t('company.items.waitlist'),
+        //   href: Routes.Waitlist,
+        //   external: false,
+        // },
       ],
     },
     {
       title: t('legal.title'),
       items: [
-        {
-          title: t('legal.items.cookiePolicy'),
-          href: Routes.CookiePolicy,
-          external: false,
-        },
-        {
-          title: t('legal.items.privacyPolicy'),
-          href: Routes.PrivacyPolicy,
-          external: false,
-        },
-        {
-          title: t('legal.items.termsOfService'),
-          href: Routes.TermsOfService,
-          external: false,
-        },
+        // {
+        //   title: t('legal.items.cookiePolicy'),
+        //   href: Routes.CookiePolicy,
+        //   external: false,
+        // },
+        // {
+        //   title: t('legal.items.privacyPolicy'),
+        //   href: Routes.PrivacyPolicy,
+        //   external: false,
+        // },
+        // {
+        //   title: t('legal.items.termsOfService'),
+        //   href: Routes.TermsOfService,
+        //   external: false,
+        // },
       ],
     },
   ];
