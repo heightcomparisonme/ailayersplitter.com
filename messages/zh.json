@@ -1,8 +1,8 @@
 {
   "Metadata": {
-    "name": "MkSaaS Demo",
-    "title": "MkSaaS - 最好的 AI SaaS 模板",
-    "description": "MkSaaS 是构建 AI SaaS 的最佳模板，使用 MkSaaS 可以在几天内轻松构建您的 AI SaaS，简单且毫不费力。"
+    "name": "Qwen Image Layered",
+    "title": "Qwen Image Layered - AI 图像分层工具",
+    "description": "Qwen Image Layered 使用 AI 自动将任何图像分解为可编辑的 RGBA 图层。适用于电商、设计和内容创建的免费开源 Photoshop 替代方案。"
   },
   "Common": {
     "premium": "付费文章",
